@@ -1,0 +1,2 @@
+require("neovimsetup")
+print("init")
