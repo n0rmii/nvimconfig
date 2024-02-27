@@ -14,4 +14,10 @@ return require("packer").startup(function(use)
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	} -- lualine
 
-end)
+	use({
+		"folke/tokyonight.nvim",
+		config = function()
+			vim.cmd("colorscheme tokyonight")
+		end})
+
+	end)
