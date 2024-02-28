@@ -10,6 +10,8 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>") -- Escaping from terminal mode
+
+vim.keymap.set("n", "<leader>ut", vim.cmd.UndotreeToggle)
 --[[
 vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false }) -- Code Runner
 
