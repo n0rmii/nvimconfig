@@ -26,9 +26,12 @@ return require("packer").startup(function(use)
 		run = function()
 			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
 			ts_update()
-		end,
-	}
+		end
+	} -- treesitter
 
-	use "mbbill/undotree" -- undotree
+	use("mbbill/undotree") -- undotree
 
+	use("theprimeagen/harpoon") -- harpoon
+
+	use("CRAG666/code_runner.nvim") -- coderunner
 end)

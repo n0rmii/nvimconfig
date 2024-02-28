@@ -1,3 +1,3 @@
 require("neovimsetup.remap")
 require("neovimsetup.packer")
-print("setup")
+require("neovimsetup.settings")
