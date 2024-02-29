@@ -1,11 +1,11 @@
 require('code_runner').setup({
 	filetype = {
 		python = "python3 -u",
-		--[[asm = {
-			"nasm -fobj $fileName &&",
-			"alink -subsys console -oPE $fileNameWithoutExt.obj &&",
-			"$fileNameWithoutExt"
-		},--]]
+		asm = {
+			"nasm -felf64 $fileName &&",
+			"ld $fileNameWithoutExt.o -o $fileNameWithoutExt &&",
+			"./$fileNameWithoutExt"
+		},
 		c = {
 			"gcc -static $fileName -o $fileNameWithoutExt &&",
 			"$fileNameWithoutExt"
