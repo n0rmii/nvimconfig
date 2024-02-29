@@ -12,7 +12,7 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>") -- Escaping from terminal mode
 
 vim.keymap.set("n", "<leader>ut", vim.cmd.UndotreeToggle)
---[[
+
 vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false }) -- Code Runner
 
 -- vim.keymap.set("n", "<leader>psc", ":PackerSync<CR>") -- quick input for packer syncing
@@ -21,4 +21,4 @@ vim.keymap.set("n", "<leader>upd", function () -- ALL the updates
 	vim.cmd.PackerSync()
 	vim.cmd.MasonUpdate()
 	vim.cmd.TSUpdate()
-end)--]]
+end)
