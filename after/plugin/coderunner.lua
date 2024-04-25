@@ -8,11 +8,11 @@ require('code_runner').setup({
 		},
 		c = {
 			"gcc -static $fileName -o $fileNameWithoutExt &&",
-			"$fileNameWithoutExt"
+			"./$fileNameWithoutExt"
 		},
 		cpp = {
 			"g++ -static $fileName -o $fileNameWithoutExt &&",
-			"$fileNameWithoutExt"
+			"./$fileNameWithoutExt"
 		}
 	},
 })
