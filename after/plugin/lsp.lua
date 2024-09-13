@@ -16,6 +16,7 @@ require('lspconfig').ts_ls.setup({}) -- Javascript/Typescript LSP
 require('lspconfig').html.setup({}) -- HTML LSP
 require('lspconfig').cssls.setup({}) -- CSS LSP
 require('lspconfig').intelephense.setup({}) -- PHP Intelephense please work
+require('lspconfig').cmake.setup({}) -- CMake
 
 -- Autocompletion
 local cmp = require('cmp')
