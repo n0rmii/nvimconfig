@@ -12,7 +12,7 @@ require("mason").setup()
 require('lspconfig').clangd.setup({}) -- C/C++ LSP
 require('lspconfig').lua_ls.setup({}) -- Lua LSP
 require('lspconfig').pylsp.setup({}) -- Python LSP
-require('lspconfig').tsserver.setup({}) -- Javascript/Typescript LSP
+require('lspconfig').ts_ls.setup({}) -- Javascript/Typescript LSP
 require('lspconfig').html.setup({}) -- HTML LSP
 require('lspconfig').cssls.setup({}) -- CSS LSP
 require('lspconfig').intelephense.setup({}) -- PHP Intelephense please work
