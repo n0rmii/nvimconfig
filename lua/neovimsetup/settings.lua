@@ -19,3 +19,5 @@ vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
+
+vim.opt.clipboard = "unnamedplus"
